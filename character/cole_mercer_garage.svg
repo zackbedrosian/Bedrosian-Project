@@ -1,0 +1,324 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="bigglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1220"/>
+      <stop offset="1" stop-color="#1b2540"/>
+    </linearGradient>
+    <linearGradient id="ceiling" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070c"/>
+      <stop offset="1" stop-color="#0d1220"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b4a70"/>
+      <stop offset="0.08" stop-color="#151b2b"/>
+      <stop offset="0.45" stop-color="#0a0d16"/>
+      <stop offset="0.75" stop-color="#121a2e"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3a5c"/>
+      <stop offset="0.5" stop-color="#0e1424"/>
+      <stop offset="1" stop-color="#070910"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0c0d13"/>
+      <stop offset="0.6" stop-color="#191b24"/>
+      <stop offset="1" stop-color="#262b3c"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d2bc"/>
+      <stop offset="1" stop-color="#e9b79c"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1e28"/>
+      <stop offset="0.6" stop-color="#0b0c12"/>
+      <stop offset="1" stop-color="#14192a"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a110e"/>
+      <stop offset="0.6" stop-color="#4e342c"/>
+      <stop offset="1" stop-color="#8a6458"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.75"/>
+    </radialGradient>
+    <clipPath id="eyeL"><path d="M326,268 Q350,256 378,262 L376,282 Q352,290 330,282 Z"/></clipPath>
+    <clipPath id="eyeR"><path d="M420,262 Q446,255 468,266 L465,284 Q444,291 422,283 Z"/></clipPath>
+  </defs>
+
+  <!-- ================= GARAGE ================= -->
+  <rect width="1024" height="1024" fill="url(#floor)"/>
+  <rect width="1024" height="420" fill="url(#ceiling)"/>
+  <!-- back wall -->
+  <rect x="0" y="380" width="1024" height="170" fill="#0a0f1b"/>
+  <g fill="#131a2b">
+    <rect x="0" y="420" width="1024" height="10"/>
+    <rect x="0" y="470" width="1024" height="6"/>
+  </g>
+  <!-- ceiling beams in perspective -->
+  <g fill="#161c2a">
+    <path d="M0,0 L1024,0 L1024,30 L0,22 Z"/>
+    <path d="M0,150 L1024,240 L1024,262 L0,170 Z"/>
+    <path d="M0,300 L1024,330 L1024,342 L0,312 Z"/>
+    <path d="M220,0 L250,0 L330,380 L318,380 Z"/>
+    <path d="M640,0 L690,0 L760,380 L744,380 Z"/>
+  </g>
+  <g stroke="#1f2638" stroke-width="3">
+    <line x1="560" y1="260" x2="900" y2="300"/>
+    <line x1="580" y1="230" x2="640" y2="300"/><line x1="640" y1="236" x2="700" y2="304"/>
+    <line x1="700" y1="243" x2="760" y2="310"/><line x1="760" y1="250" x2="820" y2="316"/>
+  </g>
+  <!-- pillars -->
+  <rect x="300" y="20" width="88" height="540" fill="#1a2132"/>
+  <rect x="300" y="20" width="22" height="540" fill="#24304a"/>
+  <rect x="920" y="160" width="90" height="400" fill="#3e4556"/>
+  <rect x="920" y="160" width="26" height="400" fill="#5b6378"/>
+  <!-- railing posts in the dark -->
+  <g fill="#c8d2e6" opacity="0.7">
+    <rect x="80" y="455" width="8" height="100"/><rect x="180" y="460" width="6" height="80"/>
+    <rect x="30" y="470" width="5" height="70"/>
+  </g>
+  <rect x="0" y="482" width="230" height="4" fill="#2c3a5c"/>
+
+  <!-- neon tubes (glow + core) -->
+  <g stroke-linecap="round">
+    <line x1="-20" y1="90" x2="1040" y2="215" stroke="#1d6dff" stroke-width="44" opacity="0.55" filter="url(#bigglow)"/>
+    <line x1="-20" y1="90" x2="1040" y2="215" stroke="#2f8cff" stroke-width="16" filter="url(#glow)"/>
+    <line x1="-20" y1="90" x2="1040" y2="215" stroke="#9fd6ff" stroke-width="7"/>
+    <line x1="-20" y1="90" x2="1040" y2="215" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-20" y1="378" x2="300" y2="384" stroke="#1d6dff" stroke-width="26" opacity="0.6" filter="url(#glow)"/>
+    <line x1="-20" y1="378" x2="300" y2="384" stroke="#9fd6ff" stroke-width="5"/>
+    <line x1="-20" y1="455" x2="240" y2="458" stroke="#1d6dff" stroke-width="18" opacity="0.6" filter="url(#glow)"/>
+    <line x1="-20" y1="455" x2="240" y2="458" stroke="#9fd6ff" stroke-width="3"/>
+  </g>
+  <!-- blue spill on pillar faces -->
+  <rect x="300" y="220" width="88" height="200" fill="#2f8cff" opacity="0.35" filter="url(#glow)"/>
+  <!-- floor reflections -->
+  <ellipse cx="120" cy="600" rx="140" ry="16" fill="#2f8cff" opacity="0.35" filter="url(#glow)"/>
+  <rect x="0" y="560" width="1024" height="2" fill="#1c2742"/>
+  <g stroke="#162038" stroke-width="2">
+    <line x1="0" y1="700" x2="200" y2="660"/><line x1="0" y1="860" x2="160" y2="800"/>
+  </g>
+
+  <!-- ================= BLACK JGTC R34 GT-R (close, facing right) ================= -->
+  <ellipse cx="600" cy="1000" rx="560" ry="40" fill="#000" opacity="0.7" filter="url(#glow)"/>
+  <g stroke="#020306" stroke-width="3" stroke-linejoin="round">
+    <!-- wing uprights -->
+    <path d="M200,476 L214,476 L236,606 L222,606 Z" fill="#0b0e16"/>
+    <path d="M300,462 L314,462 L330,598 L316,598 Z" fill="#0b0e16"/>
+    <!-- body -->
+    <path d="M140,640 L430,590 L606,372 C700,356 880,348 1030,350 L1030,1010 L190,970 L150,900 L128,800 Z" fill="url(#carBody)"/>
+    <!-- glass -->
+    <path d="M462,602 L618,384 C700,370 880,362 1030,364 L1030,612 Z" fill="url(#glass)"/>
+    <!-- B-pillar -->
+    <path d="M770,368 L800,368 L812,612 L784,612 Z" fill="#05070c"/>
+    <!-- wing blade + endplate -->
+    <path d="M118,486 L392,446 L396,470 L122,512 Z" fill="#0d1120"/>
+    <path d="M112,450 L134,448 L140,540 L118,542 Z" fill="#0d1120"/><path d="M114,452 L120,452 L124,540 L119,540 Z" fill="#d4111b" stroke="none"/>
+    <!-- mirror -->
+    <path d="M820,560 C830,536 880,530 902,548 L906,590 C880,600 840,600 822,592 Z" fill="#0b0f1a"/>
+    <path d="M852,592 L846,620 L866,620 L872,594 Z" fill="#080a10"/>
+  </g>
+  <!-- glossy neon reflections on car -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M150,642 L430,594" stroke="#7fbfff" stroke-width="3" opacity="0.8"/>
+    <path d="M610,378 C700,362 880,354 1024,356" stroke="#9fd6ff" stroke-width="4" opacity="0.9"/>
+    <path d="M470,626 L1024,632" stroke="#3a7fe8" stroke-width="10" opacity="0.5" filter="url(#soft)"/>
+    <path d="M470,628 L1024,634" stroke="#b5ddff" stroke-width="2" opacity="0.8"/>
+    <path d="M200,760 L1024,790" stroke="#2f6fd8" stroke-width="22" opacity="0.18" filter="url(#glow)"/>
+    <path d="M826,552 C846,540 880,538 898,550" stroke="#9fd6ff" stroke-width="3" opacity="0.8"/>
+  </g>
+  <!-- window reflections -->
+  <g fill="#9fd6ff" opacity="0.14">
+    <path d="M660,384 L720,378 L560,604 L500,604 Z"/>
+    <path d="M880,370 L930,368 L900,610 L860,610 Z"/>
+  </g>
+  <path d="M640,470 L1024,430" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+  <!-- seats silhouette -->
+  <path d="M860,470 C860,440 900,430 912,460 L920,612 L870,612 Z" fill="#0a0d16" opacity="0.8"/>
+  <!-- door seams + handle -->
+  <g stroke="#020306" stroke-width="2.5" fill="none">
+    <path d="M800,620 L808,980"/>
+    <path d="M440,612 L470,612"/>
+  </g>
+  <rect x="748" y="668" width="40" height="10" rx="4" fill="#1a2132" stroke="#020306" stroke-width="2"/>
+  <!-- taillight -->
+  <path d="M130,690 L150,684 L154,736 L134,740 Z" fill="#ff2340"/>
+  <ellipse cx="142" cy="712" rx="20" ry="34" fill="#ff2340" opacity="0.6" filter="url(#glow)"/>
+  <!-- livery -->
+  <path d="M150,872 L1030,900 L1030,926 L156,896 Z" fill="#d4111b"/>
+  <path d="M156,900 L1030,930 L1030,938 L158,908 Z" fill="#e8ecf4"/>
+  <text x="842" y="852" text-anchor="middle" transform="rotate(1.5 842 852)" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="82" fill="#f2f4fa" stroke="#d4111b" stroke-width="3" letter-spacing="2">NISMO</text>
+  <g transform="translate(680,730) scale(1.1)">
+    <circle r="24" fill="none" stroke="#e6e9f2" stroke-width="4"/>
+    <rect x="-33" y="-7.5" width="66" height="15" fill="#e6e9f2"/>
+    <text y="4.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="11.5" fill="#0a0d16" letter-spacing="1">NISSAN</text>
+  </g>
+  <text x="935" y="975" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-style="italic" font-size="22" fill="#e8ecf4">NISSAN  ·  GT-R</text>
+  <!-- rear arch peeking left of character -->
+  <path d="M150,968 C150,880 180,850 205,850" fill="none" stroke="#020306" stroke-width="10"/>
+
+  <!-- ================= CHARACTER ================= -->
+  <!-- pants -->
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round">
+    <path d="M262,840 L548,840 L556,1030 L414,1030 L404,920 L392,1030 L250,1030 Z" fill="#0e0f15"/>
+    <path d="M262,840 L300,840 L292,1030 L250,1030 Z" fill="#07080c" stroke="none"/>
+    <path d="M520,850 L548,840 L556,1030 L530,1030 Z" fill="#1b2236" stroke="none"/>
+    <path d="M330,930 Q348,944 366,936 M454,950 Q472,962 490,952" fill="none" stroke="#262a38" stroke-width="2"/>
+    <!-- belt -->
+    <rect x="262" y="834" width="286" height="18" fill="#08090d"/>
+    <rect x="392" y="834" width="26" height="18" fill="#9aa3b8"/>
+  </g>
+  <!-- wallet chain -->
+  <g fill="none" stroke="#b8c2d6" stroke-width="3">
+    <ellipse cx="500" cy="866" rx="6" ry="4"/><ellipse cx="506" cy="880" rx="4" ry="6"/>
+    <ellipse cx="510" cy="896" rx="6" ry="4"/><ellipse cx="512" cy="912" rx="4" ry="6"/>
+    <ellipse cx="510" cy="928" rx="6" ry="4"/><ellipse cx="504" cy="942" rx="4" ry="6"/>
+    <ellipse cx="496" cy="956" rx="6" ry="4"/><ellipse cx="486" cy="966" rx="4" ry="6"/>
+  </g>
+
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- neck -->
+    <path d="M372,320 L426,320 L430,392 L368,392 Z" fill="#e2a68a"/>
+    <path d="M372,320 L426,340 L428,368 L372,352 Z" fill="#c98c72" stroke="none"/>
+
+    <!-- jacket torso -->
+    <path d="M270,384 C320,360 480,360 540,384 L562,520 L548,846 L262,846 L248,520 Z" fill="url(#jacket)"/>
+    <!-- tee peek -->
+    <path d="M372,378 L428,378 L402,452 Z" fill="#eef0f6"/>
+    <!-- zipper -->
+    <path d="M402,452 L404,846" stroke="#7d869c" stroke-width="3"/>
+    <!-- red shoulder yokes + white piping -->
+    <path d="M270,384 C310,366 350,362 372,378 L380,420 L252,450 Z" fill="#c80f1a"/>
+    <path d="M540,384 C500,366 450,362 428,378 L422,420 L556,450 Z" fill="#c80f1a"/>
+    <path d="M254,456 L380,426" stroke="#eef0f6" stroke-width="5"/>
+    <path d="M554,456 L422,426" stroke="#eef0f6" stroke-width="5"/>
+    <!-- stand collar -->
+    <path d="M346,384 C342,356 352,340 370,334 L372,370 Q400,388 428,370 L430,334 C448,340 458,356 454,384 Q400,404 346,384 Z" fill="#14161e"/>
+    <path d="M348,378 Q400,398 452,378" fill="none" stroke="#c80f1a" stroke-width="4"/>
+    <!-- hem band -->
+    <path d="M262,820 L548,820 L548,846 L262,846 Z" fill="#c80f1a"/>
+
+    <!-- upper arms -->
+    <path d="M270,384 C236,398 226,470 228,560 L234,672 L302,672 L304,452 Z" fill="#14161e"/>
+    <path d="M540,384 C574,398 584,470 582,560 L576,672 L508,672 L506,452 Z" fill="#1d2232"/>
+  </g>
+  <!-- sleeve stripes -->
+  <path d="M244,420 C236,480 234,560 238,668 L250,668 C246,560 248,480 256,420 Z" fill="#c80f1a"/>
+  <path d="M566,420 C574,480 576,560 572,668 L560,668 C564,560 562,480 554,420 Z" fill="#c80f1a"/>
+  <path d="M258,420 C250,480 250,560 254,668 L260,668 C256,560 258,480 264,420 Z" fill="#eef0f6"/>
+  <path d="M552,420 C560,480 558,560 556,668 L550,668 C554,560 554,480 546,420 Z" fill="#eef0f6"/>
+  <!-- chest logos -->
+  <text x="476" y="500" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#f2f4fa" letter-spacing="1">NISMO</text>
+  <rect x="440" y="507" width="72" height="4" fill="#c80f1a"/>
+  <g transform="translate(330,496)">
+    <circle r="18" fill="none" stroke="#e6e9f2" stroke-width="3"/>
+    <rect x="-25" y="-6" width="50" height="12" fill="#e6e9f2"/>
+    <text y="4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9" fill="#0a0d16">NISSAN</text>
+  </g>
+
+  <!-- crossed forearms -->
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- back forearm (his left) -->
+    <path d="M300,590 L568,612 L576,676 L298,652 Z" fill="#1a1e2c"/>
+    <path d="M300,594 L326,596 L324,654 L298,652 Z" fill="#c80f1a"/>
+    <!-- hand gripping bicep -->
+    <path d="M300,596 C282,590 262,598 258,618 C256,640 270,656 298,652 Z" fill="url(#skin)"/>
+    <path d="M262,610 L282,612 M260,626 L282,628 M262,642 L284,642" stroke="#c98c72" stroke-width="2"/>
+    <!-- front forearm (his right) -->
+    <path d="M232,640 L512,560 L540,624 L258,716 Z" fill="#191b24"/>
+    <path d="M488,566 L514,560 L540,622 L514,630 Z" fill="#c80f1a"/>
+    <!-- hand tucked on right bicep -->
+    <path d="M514,562 C534,550 560,556 566,578 C570,600 556,622 538,624 Z" fill="url(#skin)"/>
+    <path d="M546,566 L562,578 M544,584 L564,594 M540,602 L558,610" stroke="#c98c72" stroke-width="2"/>
+  </g>
+  <!-- sleeve fold creases -->
+  <g fill="none" stroke="#2c3348" stroke-width="2.5" stroke-linecap="round">
+    <path d="M300,668 Q340,660 360,676"/><path d="M380,620 Q410,612 432,626"/>
+    <path d="M260,560 Q276,552 292,566"/><path d="M520,540 Q540,532 560,546"/>
+  </g>
+  <!-- glossy highlights on jacket (blue rim light from car side) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M542,392 C578,404 588,470 584,600" stroke="#5aa8ff" stroke-width="5" opacity="0.8"/>
+    <path d="M520,580 L280,660" stroke="#7fbfff" stroke-width="3" opacity="0.45"/>
+    <path d="M556,520 L548,820" stroke="#5aa8ff" stroke-width="4" opacity="0.6"/>
+    <path d="M520,760 L526,816" stroke="#9fd6ff" stroke-width="3" opacity="0.5"/>
+    <path d="M250,470 C240,520 238,600 240,640" stroke="#ffffff" stroke-width="2" opacity="0.15"/>
+  </g>
+
+  <!-- ===== HEAD ===== -->
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round">
+    <!-- back mass -->
+    <path d="M300,340 L292,280 L272,262 L292,238 L276,190 L304,160 L290,124 L336,122 L350,92 L386,108 L410,78 L436,104 L476,90 L474,124 L512,128 L500,162 L528,190 L504,214 L520,266 L496,256 L498,320 L482,286 L478,232 Z" fill="url(#hair)"/>
+  </g>
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round">
+    <!-- ear + earring -->
+    <path d="M476,262 C494,256 496,292 478,302 Z" fill="#e9b79c"/>
+    <!-- face -->
+    <path d="M320,200 L322,282 C334,318 368,344 396,352 C426,344 458,316 470,282 L476,200 Z" fill="url(#skin)"/>
+  </g>
+  <circle cx="484" cy="304" r="4" fill="#d6dbea" stroke="#05060a" stroke-width="1.5"/>
+  <!-- face shading -->
+  <path d="M322,236 L476,236 L476,254 Q400,244 322,258 Z" fill="#d9a38a" opacity="0.8"/>
+  <path d="M440,300 C434,322 420,338 396,352 C426,344 458,316 470,282 Z" fill="#d9a38a" opacity="0.7"/>
+  <!-- blush -->
+  <ellipse cx="350" cy="304" rx="20" ry="8" fill="#ff7d8f" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="446" cy="304" rx="20" ry="8" fill="#ff7d8f" opacity="0.45" filter="url(#soft)"/>
+  <g stroke="#e46a7a" stroke-width="1.5" opacity="0.6">
+    <line x1="340" y1="306" x2="344" y2="300"/><line x1="348" y1="306" x2="352" y2="300"/>
+    <line x1="440" y1="306" x2="444" y2="300"/><line x1="448" y1="306" x2="452" y2="300"/>
+  </g>
+  <!-- eyes: half-lidded, cool -->
+  <path d="M326,268 Q350,256 378,262 L376,282 Q352,290 330,282 Z" fill="#f4f1f4"/>
+  <path d="M420,262 Q446,255 468,266 L465,284 Q444,291 422,283 Z" fill="#f4f1f4"/>
+  <g clip-path="url(#eyeL)">
+    <ellipse cx="354" cy="278" rx="13" ry="16" fill="url(#iris)"/>
+    <ellipse cx="354" cy="279" rx="5" ry="8" fill="#0d0807"/>
+    <rect x="320" y="250" width="70" height="17" fill="#5a3f3a" opacity="0.35"/>
+  </g>
+  <g clip-path="url(#eyeR)">
+    <ellipse cx="443" cy="278" rx="13" ry="16" fill="url(#iris)"/>
+    <ellipse cx="443" cy="279" rx="5" ry="8" fill="#0d0807"/>
+    <rect x="410" y="250" width="70" height="17" fill="#5a3f3a" opacity="0.35"/>
+  </g>
+  <circle cx="349" cy="274" r="3" fill="#fff"/><circle cx="438" cy="274" r="3" fill="#fff"/>
+  <circle cx="360" cy="284" r="1.5" fill="#fff" opacity="0.8"/><circle cx="449" cy="284" r="1.5" fill="#fff" opacity="0.8"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M322,268 Q350,258 382,264" stroke="#0a0a10" stroke-width="5.5"/>
+    <path d="M416,264 Q446,256 472,268" stroke="#0a0a10" stroke-width="5.5"/>
+    <path d="M378,264 L384,260 M470,268 L476,265" stroke="#0a0a10" stroke-width="3"/>
+    <path d="M334,284 Q352,290 372,284" stroke="#8a5a50" stroke-width="2"/>
+    <path d="M426,285 Q444,291 462,285" stroke="#8a5a50" stroke-width="2"/>
+    <!-- nose + flat mouth -->
+    <path d="M400,300 L396,312" stroke="#c48670" stroke-width="2.5"/>
+    <path d="M388,332 L404,331" stroke="#7a3f3a" stroke-width="2.5"/>
+  </g>
+  <!-- hair -->
+  <g stroke="#05060a" stroke-width="3" stroke-linejoin="round">
+    <!-- bangs (strands falling over eyes) -->
+    <path d="M304,196 C320,130 470,118 500,196 L490,246 L476,226 L466,270 L452,228 L436,252 L420,222 L404,258 L390,224 L372,250 L360,226 L344,254 L336,228 L320,252 L316,222 Z" fill="url(#hair)"/>
+    <!-- side lock -->
+    <path d="M322,226 L304,300 L312,346 L326,300 L330,250 Z" fill="#0d0e15"/>
+  </g>
+  <!-- silver-tipped strands -->
+  <g fill="#c9cedd" stroke="#05060a" stroke-width="2" stroke-linejoin="round">
+    <path d="M292,238 L272,262 L292,280 L300,262 Z"/>
+    <path d="M304,160 L276,190 L290,206 L306,180 Z"/>
+    <path d="M290,124 L336,122 L318,140 Z"/>
+    <path d="M304,300 L312,346 L318,318 Z"/>
+  </g>
+  <!-- hair shine + blue rim light -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M340,160 Q380,140 430,152" stroke="#5c6680" stroke-width="5" opacity="0.8"/>
+    <path d="M352,172 Q384,158 420,166" stroke="#8c96b4" stroke-width="2" opacity="0.7"/>
+    <path d="M476,92 L474,124 L512,128 L500,162 L528,190 L504,214 L520,266" stroke="#2f8cff" stroke-width="10" opacity="0.5" filter="url(#soft)"/>
+  </g>
+
+  <!-- atmosphere: haze + vignette -->
+  <rect width="1024" height="1024" fill="#1d6dff" opacity="0.05"/>
+  <rect width="1024" height="1024" fill="url(#vignette)"/>
+</svg>
