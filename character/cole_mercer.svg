@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14183a"/>
+      <stop offset="0.3" stop-color="#4b2c63"/>
+      <stop offset="0.5" stop-color="#c4566a"/>
+      <stop offset="0.62" stop-color="#f59a52"/>
+      <stop offset="0.7" stop-color="#ffd38a"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4658"/>
+      <stop offset="1" stop-color="#18171f"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a5a68"/>
+      <stop offset="0.18" stop-color="#1a1a22"/>
+      <stop offset="0.6" stop-color="#0c0c11"/>
+      <stop offset="1" stop-color="#050507"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3c4a66"/>
+      <stop offset="0.5" stop-color="#151a26"/>
+      <stop offset="1" stop-color="#0a0c12"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2638"/>
+      <stop offset="1" stop-color="#141119"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff2c4"/>
+      <stop offset="0.6" stop-color="#ffd27a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffb35a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d9d9e0"/>
+      <stop offset="0.7" stop-color="#8e8e9a"/>
+      <stop offset="1" stop-color="#4a4a55"/>
+    </radialGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1a10"/>
+      <stop offset="0.55" stop-color="#7a4a22"/>
+      <stop offset="1" stop-color="#d48a3c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <circle cx="200" cy="590" r="150" fill="url(#sun)"/>
+  <!-- distant pit building + grandstand -->
+  <path d="M0,600 L0,560 L120,560 L120,540 L330,540 L330,565 L520,565 L520,520 L560,500 L900,500 L900,600 Z" fill="#2b2140"/>
+  <g stroke="#3d2f57" stroke-width="3">
+    <line x1="560" y1="520" x2="900" y2="520"/>
+    <line x1="560" y1="540" x2="900" y2="540"/>
+    <line x1="560" y1="560" x2="900" y2="560"/>
+  </g>
+  <g fill="#f6c27a" opacity="0.8">
+    <rect x="140" y="575" width="18" height="10"/><rect x="170" y="575" width="18" height="10"/>
+    <rect x="230" y="575" width="18" height="10"/><rect x="350" y="580" width="18" height="10"/>
+    <rect x="390" y="580" width="18" height="10"/>
+  </g>
+  <!-- light poles -->
+  <g stroke="#221a33" stroke-width="5">
+    <line x1="60" y1="600" x2="60" y2="430"/><line x1="460" y1="600" x2="460" y2="420"/>
+  </g>
+  <rect x="40" y="420" width="40" height="14" fill="#221a33"/>
+  <rect x="440" y="410" width="40" height="14" fill="#221a33"/>
+
+  <!-- track -->
+  <rect x="0" y="600" width="900" height="600" fill="url(#track)"/>
+  <!-- curb -->
+  <g>
+    <rect x="0" y="640" width="900" height="18" fill="#f1f1f1"/>
+    <g fill="#d4111b">
+      <rect x="0" y="640" width="45" height="18"/><rect x="90" y="640" width="45" height="18"/>
+      <rect x="180" y="640" width="45" height="18"/><rect x="270" y="640" width="45" height="18"/>
+      <rect x="360" y="640" width="45" height="18"/><rect x="450" y="640" width="45" height="18"/>
+      <rect x="540" y="640" width="45" height="18"/><rect x="630" y="640" width="45" height="18"/>
+      <rect x="720" y="640" width="45" height="18"/><rect x="810" y="640" width="45" height="18"/>
+    </g>
+  </g>
+  <!-- anime speed streaks -->
+  <g stroke="#ffffff" stroke-linecap="round" opacity="0.18">
+    <line x1="0" y1="700" x2="260" y2="700" stroke-width="3"/>
+    <line x1="30" y1="740" x2="200" y2="740" stroke-width="2"/>
+    <line x1="0" y1="950" x2="300" y2="950" stroke-width="3"/>
+    <line x1="60" y1="1000" x2="240" y2="1000" stroke-width="2"/>
+  </g>
+
+  <!-- ===== JGTC SKYLINE GT-R (R34, side view, facing left) ===== -->
+  <ellipse cx="460" cy="920" rx="450" ry="22" fill="#000" opacity="0.55"/>
+  <g stroke="#000" stroke-width="3" stroke-linejoin="round">
+    <!-- rear wing uprights -->
+    <rect x="800" y="700" width="10" height="52" fill="#111"/>
+    <rect x="845" y="698" width="10" height="54" fill="#111"/>
+    <!-- body -->
+    <path d="M44,812 C42,786 58,772 92,768 L300,748 L420,692 C445,684 560,682 602,690 L700,742 L852,748 L876,754 L882,806 L876,862 L52,864 L34,868 L32,856 Z" fill="url(#carBody)"/>
+    <!-- windows -->
+    <path d="M334,746 L426,700 C448,694 548,694 590,700 L668,744 Z" fill="url(#glass)"/>
+    <line x1="508" y1="697" x2="514" y2="745" stroke-width="6"/>
+    <!-- mirror -->
+    <path d="M352,736 L378,728 L384,742 L356,748 Z" fill="#111"/>
+    <!-- rear wing -->
+    <path d="M768,690 L900,682 L900,700 L770,706 Z" fill="#0d0d12"/>
+    <rect x="884" y="664" width="16" height="52" fill="#d4111b"/>
+  </g>
+  <!-- glass highlight -->
+  <path d="M440,702 L470,700 L420,742 L392,742 Z" fill="#ffffff" opacity="0.18"/>
+  <!-- headlight + taillight slivers -->
+  <path d="M56,782 C66,772 92,770 128,768 L122,784 L60,792 Z" fill="#e7eef8" stroke="#000" stroke-width="2"/>
+  <path d="M862,756 L880,760 L882,782 L866,780 Z" fill="#ff2a2a" stroke="#000" stroke-width="2"/>
+  <!-- body highlight line -->
+  <path d="M95,772 L300,752 L420,697" stroke="#9a9aae" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M120,800 L860,792" stroke="#2c2c38" stroke-width="2" fill="none"/>
+  <!-- door shut lines -->
+  <g stroke="#000" stroke-width="2" fill="none">
+    <path d="M330,750 L326,856"/><path d="M590,742 L594,856"/>
+  </g>
+  <!-- livery: red + white stripes -->
+  <path d="M46,830 L878,822 L878,838 L46,846 Z" fill="#d4111b"/>
+  <path d="M46,848 L878,840 L878,845 L46,853 Z" fill="#f4f4f4"/>
+  <!-- splitter & skirt -->
+  <path d="M26,866 L150,862 L150,872 L26,874 Z" fill="#1e1e26" stroke="#000" stroke-width="2"/>
+  <!-- NISMO on door -->
+  <text x="458" y="814" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="50" fill="#ffffff" stroke="#d4111b" stroke-width="2" letter-spacing="2">NISMO</text>
+  <!-- NISSAN roundel on front fender -->
+  <g transform="translate(298,776) scale(0.8)">
+    <circle r="22" fill="none" stroke="#e6e6ee" stroke-width="4"/>
+    <rect x="-30" y="-7" width="60" height="14" fill="#e6e6ee"/>
+    <text y="4.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="11" fill="#0c0c11" letter-spacing="1">NISSAN</text>
+  </g>
+  <!-- small sponsor stickers -->
+  <text x="58" y="822" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="#f4f4f4" font-style="italic">NISSAN</text>
+  <text x="700" y="786" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" fill="#f4f4f4" font-style="italic">GT-R</text>
+  <text x="634" y="814" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="14" fill="#d4111b" font-style="italic">NISMO</text>
+  <!-- wheels -->
+  <g>
+    <circle cx="205" cy="862" r="66" fill="#050507"/>
+    <circle cx="715" cy="862" r="66" fill="#050507"/>
+    <!-- JGTC wide-body fender flares -->
+    <g fill="none" stroke-linecap="butt">
+      <path d="M127,862 A78,78 0 0 1 283,862" stroke="#000" stroke-width="20"/>
+      <path d="M127,862 A78,78 0 0 1 283,862" stroke="#1e1e28" stroke-width="14"/>
+      <path d="M137,846 A70,70 0 0 1 250,800" stroke="#6a6a7c" stroke-width="2"/>
+      <path d="M637,862 A78,78 0 0 1 793,862" stroke="#000" stroke-width="20"/>
+      <path d="M637,862 A78,78 0 0 1 793,862" stroke="#1e1e28" stroke-width="14"/>
+      <path d="M647,846 A70,70 0 0 1 760,800" stroke="#6a6a7c" stroke-width="2"/>
+    </g>
+    <g transform="translate(205,862)">
+      <circle r="58" fill="#141418" stroke="#000" stroke-width="3"/>
+      <circle r="42" fill="url(#rim)" stroke="#2a2a33" stroke-width="2"/>
+      <g stroke="#3a3a46" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="-38" x2="0" y2="38"/><line x1="-33" y1="-19" x2="33" y2="19"/><line x1="-33" y1="19" x2="33" y2="-19"/>
+      </g>
+      <circle r="9" fill="#d4111b" stroke="#000" stroke-width="2"/>
+      <path d="M-30,-20 A36,36 0 0 1 10,-35" stroke="#fff" stroke-width="3" fill="none" opacity="0.6"/>
+    </g>
+    <g transform="translate(715,862)">
+      <circle r="58" fill="#141418" stroke="#000" stroke-width="3"/>
+      <circle r="42" fill="url(#rim)" stroke="#2a2a33" stroke-width="2"/>
+      <g stroke="#3a3a46" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="-38" x2="0" y2="38"/><line x1="-33" y1="-19" x2="33" y2="19"/><line x1="-33" y1="19" x2="33" y2="-19"/>
+      </g>
+      <circle r="9" fill="#d4111b" stroke="#000" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- ===== CHARACTER: COLE MERCER ===== -->
+  <g stroke="#0d0d12" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- pants (black) -->
+    <path d="M566,688 L734,688 L752,1200 L664,1200 L652,790 L640,1200 L550,1200 Z" fill="#141419"/>
+    <!-- pants cel shadow + folds -->
+    <path d="M566,688 L600,688 L585,1200 L550,1200 Z" fill="#0a0a0d" stroke="none"/>
+    <path d="M700,690 L734,688 L752,1200 L722,1200 Z" fill="#0a0a0d" stroke="none"/>
+    <g stroke="#3a3a48" stroke-width="2" fill="none">
+      <path d="M600,860 Q612,872 626,866"/><path d="M590,960 Q606,974 622,966"/>
+      <path d="M676,880 Q690,892 706,884"/><path d="M684,1000 Q700,1012 716,1004"/>
+      <path d="M652,700 L652,790"/>
+    </g>
+    <!-- belt -->
+    <rect x="566" y="684" width="168" height="16" fill="#0b0b0e"/>
+    <rect x="640" y="684" width="22" height="16" fill="#8e8e9a"/>
+
+    <!-- neck -->
+    <path d="M630,320 L670,320 L672,392 L628,392 Z" fill="#e2a982"/>
+    <path d="M630,330 L670,350 L670,370 L630,360 Z" fill="#c4865f" stroke="none"/>
+
+    <!-- tee under jacket -->
+    <path d="M618,384 L682,384 L676,692 L624,692 Z" fill="#f2f2f4"/>
+    <path d="M630,384 Q650,402 670,384" fill="#e2a982"/>
+
+    <!-- sleeves -->
+    <path d="M560,392 C528,398 512,424 508,466 L496,640 L540,648 L556,472 Z" fill="#17171d"/>
+    <path d="M740,392 C772,398 788,424 792,466 L804,640 L760,648 L744,472 Z" fill="#17171d"/>
+    <!-- sleeve stripes (red/white) -->
+    <path d="M520,420 L506,640 L516,642 L530,418 Z" fill="#d4111b" stroke="none"/>
+    <path d="M532,416 L518,642 L524,643 L538,414 Z" fill="#f4f4f4" stroke="none"/>
+    <path d="M780,420 L794,640 L784,642 L770,418 Z" fill="#d4111b" stroke="none"/>
+    <path d="M768,416 L782,642 L776,643 L762,414 Z" fill="#f4f4f4" stroke="none"/>
+    <!-- cuffs -->
+    <path d="M494,636 L542,644 L540,668 L492,662 Z" fill="#d4111b"/>
+    <path d="M806,636 L758,644 L760,668 L808,662 Z" fill="#d4111b"/>
+    <!-- hands -->
+    <path d="M494,664 C488,690 498,716 518,718 C538,718 544,694 540,668 Z" fill="#e2a982"/>
+    <path d="M806,664 C812,690 802,716 782,718 C762,718 756,694 760,668 Z" fill="#e2a982"/>
+    <path d="M500,690 L506,712 M512,692 L516,716" stroke="#a66e4c" stroke-width="2"/>
+    <path d="M800,690 L794,712 M788,692 L784,716" stroke="#a66e4c" stroke-width="2"/>
+
+    <!-- jacket torso (open front) -->
+    <path d="M560,392 C590,380 612,378 622,380 L630,700 L566,704 L556,560 Z" fill="#17171d"/>
+    <path d="M740,392 C710,380 688,378 678,380 L670,700 L734,704 L744,560 Z" fill="#17171d"/>
+    <!-- cel shadow on jacket -->
+    <path d="M560,470 L590,470 L596,702 L566,704 Z" fill="#0b0b0f" stroke="none"/>
+    <!-- red shoulder yokes -->
+    <path d="M560,392 C590,380 612,378 622,380 L624,440 L556,462 Z" fill="#d4111b"/>
+    <path d="M740,392 C710,380 688,378 678,380 L676,440 L744,462 Z" fill="#d4111b"/>
+    <!-- white piping -->
+    <path d="M556,466 L624,444" stroke="#f4f4f4" stroke-width="5"/>
+    <path d="M744,466 L676,444" stroke="#f4f4f4" stroke-width="5"/>
+    <!-- zipper edges -->
+    <path d="M622,382 L630,700" stroke="#8e8e9a" stroke-width="3"/>
+    <path d="M678,382 L670,700" stroke="#8e8e9a" stroke-width="3"/>
+    <!-- hem band -->
+    <path d="M566,688 L630,686 L630,704 L566,708 Z" fill="#d4111b"/>
+    <path d="M734,688 L670,686 L670,704 L734,708 Z" fill="#d4111b"/>
+    <!-- stand collar -->
+    <path d="M606,384 C604,360 612,344 628,340 L628,372 Q650,390 672,372 L672,340 C688,344 696,360 694,384 Q650,404 606,384 Z" fill="#17171d"/>
+    <path d="M608,378 Q650,398 692,378" stroke="#d4111b" stroke-width="4" fill="none"/>
+  </g>
+  <!-- chest logos -->
+  <text x="704" y="506" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#ffffff" letter-spacing="1">NISMO</text>
+  <rect x="674" y="512" width="60" height="4" fill="#d4111b"/>
+  <g transform="translate(592,500)">
+    <circle r="16" fill="none" stroke="#e6e6ee" stroke-width="3"/>
+    <rect x="-22" y="-5" width="44" height="10" fill="#e6e6ee"/>
+    <text y="3.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="8" fill="#0c0c11">NISSAN</text>
+  </g>
+  <text x="700" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9" fill="#9a9aae" letter-spacing="1">MOTORSPORTS</text>
+
+  <!-- head -->
+  <g stroke="#0d0d12" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- ears -->
+    <path d="M590,258 C574,254 572,282 590,292 Z" fill="#e2a982"/>
+    <path d="M710,258 C726,254 728,282 710,292 Z" fill="#e2a982"/>
+    <!-- face -->
+    <path d="M588,220 L590,288 C600,320 628,346 650,352 C672,346 700,320 710,288 L712,220 Z" fill="#f0bd97"/>
+    <!-- face shadow under hair / jaw -->
+    <path d="M590,230 L710,230 L710,250 Q650,238 590,252 Z" fill="#d79c76" stroke="none"/>
+    <path d="M590,288 C600,320 628,346 650,352 L650,340 C628,334 606,314 596,292 Z" fill="#d79c76" stroke="none"/>
+  </g>
+  <!-- eyes -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- whites -->
+    <path d="M603,270 Q622,256 641,266 L639,284 Q622,292 605,284 Z" fill="#ffffff"/>
+    <path d="M697,270 Q678,256 659,266 L661,284 Q678,292 695,284 Z" fill="#ffffff"/>
+    <!-- irises -->
+    <ellipse cx="624" cy="275" rx="10" ry="13" fill="url(#iris)"/>
+    <ellipse cx="676" cy="275" rx="10" ry="13" fill="url(#iris)"/>
+    <ellipse cx="624" cy="276" rx="4.5" ry="7" fill="#120a06"/>
+    <ellipse cx="676" cy="276" rx="4.5" ry="7" fill="#120a06"/>
+    <circle cx="620" cy="269" r="3.5" fill="#fff"/><circle cx="672" cy="269" r="3.5" fill="#fff"/>
+    <circle cx="628" cy="282" r="1.6" fill="#fff"/><circle cx="680" cy="282" r="1.6" fill="#fff"/>
+    <!-- upper lash lines -->
+    <path d="M599,272 Q620,252 644,264" stroke="#0d0d12" stroke-width="5" fill="none"/>
+    <path d="M701,272 Q680,252 656,264" stroke="#0d0d12" stroke-width="5" fill="none"/>
+    <path d="M608,286 Q622,291 636,286" stroke="#7a4a32" stroke-width="2" fill="none"/>
+    <path d="M692,286 Q678,291 664,286" stroke="#7a4a32" stroke-width="2" fill="none"/>
+    <!-- brows (confident, slightly furrowed) -->
+    <path d="M600,250 L640,246 L641,251 L603,256 Z" fill="#1a1620"/>
+    <path d="M700,250 L660,246 L659,251 L697,256 Z" fill="#1a1620"/>
+    <!-- nose -->
+    <path d="M653,296 L648,310 L656,311" stroke="#b07a56" stroke-width="2.5" fill="none"/>
+    <!-- smirk -->
+    <path d="M636,326 Q652,332 668,322" stroke="#5a2a1c" stroke-width="3" fill="none"/>
+    <path d="M668,322 L672,318" stroke="#5a2a1c" stroke-width="2.5" fill="none"/>
+    <!-- blush -->
+    <ellipse cx="610" cy="300" rx="10" ry="4" fill="#ff8a8a" opacity="0.25"/>
+    <ellipse cx="690" cy="300" rx="10" ry="4" fill="#ff8a8a" opacity="0.25"/>
+  </g>
+  <!-- hair -->
+  <g stroke="#0d0d12" stroke-width="3" stroke-linejoin="round">
+    <path d="M584,270 L578,224 L552,214 L578,192 L560,152 L606,166 L610,122 L644,152 L672,112 L688,156 L728,130 L720,176 L752,182 L728,212 L736,262 L714,236 L706,212 L694,250 L680,214 L662,252 L648,210 L628,248 L616,212 L600,244 L594,220 Z" fill="url(#hair)"/>
+    <!-- hair highlights -->
+    <path d="M616,150 L640,168 L668,140 L676,172 L706,160 L690,180 L660,166 L640,184 L622,168 Z" fill="#4a4060" stroke="none"/>
+  </g>
+
+  <!-- ===== NAME CARD ===== -->
+  <g transform="translate(36,60)">
+    <path d="M0,0 L450,0 L430,84 L-20,84 Z" fill="#0c0c11" opacity="0.85"/>
+    <rect x="0" y="0" width="8" height="84" fill="#d4111b"/>
+    <text x="24" y="40" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="32" fill="#ffffff" letter-spacing="1">COLE MERCER</text>
+    <text x="24" y="68" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" fill="#d4111b" letter-spacing="3">AGE 18 · USA · TOP GEAR ACADEMY</text>
+  </g>
+</svg>
